@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>FavBall</title>
+  <meta name="description" content="Football Apps" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#499c41">
+  <link rel="shortcut icon" type="image/png" href="icon/icon-512.png" />
+  <link rel="apple-touch-icon" href="icon/icon-192.png">
+</head>
+
+<body class="blue-grey darken-4">
+
+  <nav class="light-green darken-4" role="navigation">
+    <div class="nav-wrapper container">
+      <a href="#" class="brand-logo" id="logo-container">FavBall</a>
+      <a href="./index.html" class="sidenav-trigger" data-target="nav-mobile">
+        <i class="material-icons">arrow_back</i>
+      </a>
+      <ul class="topnav right hide-on-med-and-down"></ul>
+      <ul class="sidenav" id="nav-mobile"></ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h3 class="header center light-green-text text-darken-1">Schedule Team</h3>
+    <div class="row" id="schedule" style="margin-top: 30px;"></div>
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large green" id="save">
+        <i class="large material-icons">favorite</i>
+      </a>
+    </div>
+    <div class="fixed-action-btn">
+      <a href="./index.html" class="btn-floating btn-large waves-effect waves-light green" id="delete">
+        <i class="material-icons">delete</i>
+      </a>
+    </div>
+  </div>
+
+  <script src="js/materialize.min.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/idb.js"></script>
+  <script src="js/db.js"></script>
+  <script src="./register-service-worker.js"></script>
+  <script src="js/action.js"></script>
+</body>
+
+</html>
